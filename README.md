@@ -2,7 +2,7 @@
 
 A single-page personal portfolio built from an empty file with **HTML5, CSS3 and vanilla JavaScript**. No framework, no page builder, no template.
 
-**Live site:** https://YOUR-LIVE-URL-HERE
+**Live site:** https://sidra-ghulam-hussain.netlify.app/#home
 **Repository:** https://github.com/sidra-ghulam-hussain/tsg-webdev-p01-sidra
 
 Submitted for **The Sky Gen — Web Development, Project 01** (Ref: TSG/WD/P01/2026).
