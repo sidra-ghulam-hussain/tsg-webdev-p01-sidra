@@ -55,12 +55,6 @@ Checked at all three required widths with no horizontal scrolling:
 - Git & GitHub — version control
 - Deployed on Netlify
 
-## Screenshots
-
-| Mobile (360px) | Tablet (768px) | Desktop (1440px) |
-| --- | --- | --- |
-| ![Mobile view](assets/screenshots/mobile-360.png) | ![Tablet view](assets/screenshots/tablet-768.png) | ![Desktop view](assets/screenshots/desktop-1440.png) |
-
 ## Project structure
 
 ```
