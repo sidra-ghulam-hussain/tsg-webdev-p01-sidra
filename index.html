@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sidra Ghulam Hussain — Software Engineer</title>
+<meta name="description" content="Software engineer building real-time, multi-user web applications with React, Node.js, Socket.IO and WebRTC. Portfolio, projects and CV.">
+<meta name="author" content="Sidra Ghulam Hussain">
+
+<!-- Open Graph: controls how the link looks when shared -->
+<meta property="og:title" content="Sidra Ghulam Hussain — Software Engineer">
+<meta property="og:description" content="Full-stack engineer shipping real-time, multi-user web applications.">
+<meta property="og:type" content="website">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+<!-- Typefaces: Bricolage Grotesque for display, Newsreader for reading prose -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,500;12..96,700;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+
+<!-- Font Awesome for skill and social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav__progress" id="navProgress" aria-hidden="true"></div>
+  <div class="shell nav__inner">
+
+    <a class="brand" href="#home" aria-label="Sidra Ghulam Hussain, back to top">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="26" height="26">
+          <circle cx="22" cy="22" r="6"/><circle cx="42" cy="22" r="6"/><circle cx="32" cy="44" r="6"/>
+          <path d="M22 22 42 22 32 44Z" fill="none" stroke="currentColor" stroke-width="2.5"/>
+        </svg>
+      </span>
+      <span class="brand__name">Sidra Ghulam Hussain</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#home" class="nav__link is-active">Home</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#projects" class="nav__link">Projects</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <div class="nav__tools">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+      </button>
+      <button class="icon-btn nav__burger" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="burger" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <canvas class="hero__mesh" id="mesh" aria-hidden="true"></canvas>
+
+    <div class="shell hero__inner">
+
+      <div class="hero__text">
+        <p class="hero__status">
+          <span class="dot" aria-hidden="true"></span>
+          Open to work — Multan, Pakistan &amp; remote
+        </p>
+
+        <h1 class="hero__name">Sidra<br>Ghulam Hussain</h1>
+
+        <p class="hero__tagline">I build web applications that stay in sync — real logins, real data, real people on both ends of the connection.</p>
+
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#projects">See the work</a>
+          <a class="btn btn--ghost" href="#contact">Start a conversation</a>
+        </div>
+
+        <dl class="hero__stats">
+          <div><dt>Full-stack apps shipped</dt><dd>6</dd></div>
+          <div><dt>Internships completed</dt><dd>4</dd></div>
+          <div><dt>CGPA at Air University</dt><dd>3.72</dd></div>
+        </dl>
+      </div>
+
+      <figure class="hero__portrait">
+        <img src="assets/profile.jpg" alt="Portrait of Sidra Ghulam Hussain" width="800" height="800" loading="eager">
+        <figcaption>BS Software Engineering, Air University Multan</figcaption>
+      </figure>
+
+    </div>
+
+    <p class="hero__hint" aria-hidden="true">Move your cursor across the mesh</p>
+  </section>
+
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="shell about">
+
+      <div class="section__head">
+        <h2 class="section__title">About</h2>
+        <p class="section__note">Who is writing the code</p>
+      </div>
+
+      <div class="about__body">
+        <p class="prose">
+          I build software that stays in sync. Across two internships at CodeAlpha I shipped four
+          full-stack applications end to end — an e-commerce store, a social platform, a real-time
+          Kanban board and a peer-to-peer video conferencing app — covering authentication, database
+          design, REST APIs and live multi-user architecture with Socket.IO and WebRTC. I am in my
+          third year of BS Software Engineering at Air University Multan with a 3.72 CGPA, and I work
+          mostly in JavaScript, React, Node and C++. What I care about most is that things actually
+          run: real checkout logic instead of a dead button, and sync tested with real people on both
+          ends of the call.
+        </p>
+
+        <ul class="facts">
+          <li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><span><strong>BS Software Engineering</strong> — Air University, Multan Campus, 2023&ndash;present</span></li>
+          <li><i class="fa-solid fa-certificate" aria-hidden="true"></i><span><strong>CodeAlpha</strong> — Full Stack &amp; Frontend internships, both with letters of recommendation</span></li>
+          <li><i class="fa-solid fa-code-branch" aria-hidden="true"></i><span><strong>Arch Technologies</strong> — web development intern, client sites in HTML, CSS and JavaScript</span></li>
+          <li><i class="fa-solid fa-language" aria-hidden="true"></i><span><strong>Urdu, Punjabi, English</strong> — comfortable working and documenting in English</span></li>
+        </ul>
+
+        <a class="btn btn--solid" href="assets/Sidra_Ghulam_Hussain_CV.pdf" download>
+          <i class="fa-solid fa-arrow-down" aria-hidden="true"></i> Download CV
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section--tint" id="skills">
+    <div class="shell">
+
+      <div class="section__head">
+        <h2 class="section__title">Skills</h2>
+        <p class="section__note">Rated by what I have actually built with, not what I have read about</p>
+      </div>
+
+      <ul class="skills">
+        <li class="skill">
+          <i class="fa-brands fa-js" aria-hidden="true"></i>
+          <h3>JavaScript (ES6)</h3>
+          <p>DOM work, async flows, client-side state without a framework.</p>
+          <div class="meter" role="img" aria-label="JavaScript proficiency: 90 out of 100"><span data-level="90"></span></div>
+        </li>
+        <li class="skill">
+          <i class="fa-brands fa-html5" aria-hidden="true"></i>
+          <h3>HTML5 &amp; CSS3</h3>
+          <p>Semantic structure, Flexbox and Grid layouts, responsive breakpoints.</p>
+          <div class="meter" role="img" aria-label="HTML and CSS proficiency: 92 out of 100"><span data-level="92"></span></div>
+        </li>
+        <li class="skill">
+          <i class="fa-brands fa-react" aria-hidden="true"></i>
+          <h3>React.js</h3>
+          <p>Component architecture and state management, used in Verve Market.</p>
+          <div class="meter" role="img" aria-label="React proficiency: 80 out of 100"><span data-level="80"></span></div>
+        </li>
+        <li class="skill">
+          <i class="fa-brands fa-node-js" aria-hidden="true"></i>
+          <h3>Node.js &amp; Express</h3>
+          <p>RESTful APIs, routing, middleware, server-side validation.</p>
+          <div class="meter" role="img" aria-label="Node and Express proficiency: 85 out of 100"><span data-level="85"></span></div>
+        </li>
+        <li class="skill">
+          <i class="fa-solid fa-database" aria-hidden="true"></i>
+          <h3>MongoDB &amp; SQLite</h3>
+          <p>Schema design, relationships and queries behind four live apps.</p>
+          <div class="meter" role="img" aria-label="Databases proficiency: 78 out of 100"><span data-level="78"></span></div>
+        </li>
+        <li class="skill">
+          <i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i>
+          <h3>Socket.IO &amp; WebRTC</h3>
+          <p>Live sync, presence, peer-to-peer video and data channels.</p>
+          <div class="meter" role="img" aria-label="Real-time technologies proficiency: 82 out of 100"><span data-level="82"></span></div>
+        </li>
+        <li class="skill">
+          <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+          <h3>Auth &amp; Security</h3>
+          <p>JWT sessions, password hashing, AES-256-GCM client-side encryption.</p>
+          <div class="meter" role="img" aria-label="Authentication and security proficiency: 75 out of 100"><span data-level="75"></span></div>
+        </li>
+        <li class="skill">
+          <i class="fa-solid fa-code" aria-hidden="true"></i>
+          <h3>C++ &amp; Python</h3>
+          <p>Object-oriented design, data structures, coursework and console systems.</p>
+          <div class="meter" role="img" aria-label="C++ and Python proficiency: 84 out of 100"><span data-level="84"></span></div>
+        </li>
+        <li class="skill">
+          <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+          <h3>Git &amp; GitHub</h3>
+          <p>Branching, meaningful commit history, deploying from a repository.</p>
+          <div class="meter" role="img" aria-label="Git and GitHub proficiency: 86 out of 100"><span data-level="86"></span></div>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="shell">
+
+      <div class="section__head">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__note">Six applications, every one of them running code with a repository behind it</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter projects by type">
+        <button class="chip is-active" type="button" data-filter="all">Everything</button>
+        <button class="chip" type="button" data-filter="fullstack">Full stack</button>
+        <button class="chip" type="button" data-filter="realtime">Real time</button>
+        <button class="chip" type="button" data-filter="frontend">Front end</button>
+      </div>
+
+      <div class="grid" id="projectGrid">
+
+        <article class="card" data-tags="fullstack realtime">
+          <a class="card__media" href="https://github.com/sidra-ghulam-hussain/CodeAlpha_Confero" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <img src="assets/covers/confero.svg" alt="" width="880" height="560" loading="lazy">
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">Confero</h3>
+            <p class="card__kicker">Real-time video conferencing</p>
+            <p class="card__text">Multi-user video calls on a peer-to-peer WebRTC mesh, with screen sharing, a collaborative whiteboard, and serverless file transfer over data channels. Messages are encrypted client side with AES-256-GCM, so the server only ever relays ciphertext.</p>
+            <ul class="stack"><li>WebRTC</li><li>Socket.IO</li><li>Node.js</li><li>JWT</li><li>AES-256-GCM</li></ul>
+            <p class="card__links">
+              <a href="https://github.com/sidra-ghulam-hussain/CodeAlpha_Confero" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source code</a>
+              <a href="https://screenrec.com/share/5hx27IESQ9" target="_blank" rel="noopener"><i class="fa-solid fa-circle-play" aria-hidden="true"></i> Watch demo</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card" data-tags="fullstack realtime">
+          <a class="card__media" href="https://github.com/sidra-ghulam-hussain/CodeAlpha_Flowdeck" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <img src="assets/covers/flowdeck.svg" alt="" width="880" height="560" loading="lazy">
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">Flowdeck</h3>
+            <p class="card__kicker">Team project management</p>
+            <p class="card__text">A Kanban board where drag-and-drop cards sync instantly across every connected client. Includes task assignment, priorities, due dates, threaded comments, live presence indicators and push notifications, tested across concurrent multi-user sessions.</p>
+            <ul class="stack"><li>Socket.IO</li><li>Express</li><li>SQLite</li><li>JWT</li></ul>
+            <p class="card__links">
+              <a href="https://github.com/sidra-ghulam-hussain/CodeAlpha_Flowdeck" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source code</a>
+              <a href="https://screenrec.com/share/uxdnY5twGD" target="_blank" rel="noopener"><i class="fa-solid fa-circle-play" aria-hidden="true"></i> Watch demo</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card" data-tags="fullstack">
+          <a class="card__media" href="https://github.com/sidra-ghulam-hussain/CodeAlpha_VerveMarket" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <img src="assets/covers/verve-market.svg" alt="" width="880" height="560" loading="lazy">
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">Verve Market</h3>
+            <p class="card__kicker">E-commerce platform</p>
+            <p class="card__text">A storefront with search, filtering, sorting and a cart that survives a page refresh. Checkout runs real order-processing logic with inventory validation, stock updates and tracking codes — not a decorative buy button. The boutique UI is hand-built, no framework.</p>
+            <ul class="stack"><li>React</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>JWT</li></ul>
+            <p class="card__links">
+              <a href="https://github.com/sidra-ghulam-hussain/CodeAlpha_VerveMarket" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source code</a>
+              <a href="https://screenrec.com/share/9LTqn7lsD1" target="_blank" rel="noopener"><i class="fa-solid fa-circle-play" aria-hidden="true"></i> Watch demo</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card" data-tags="fullstack">
+          <a class="card__media" href="https://github.com/sidra-ghulam-hussain/CodeAlpha_PulseCircle" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <img src="assets/covers/pulse-circle.svg" alt="" width="880" height="560" loading="lazy">
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">Pulse Circle</h3>
+            <p class="card__kicker">Social platform</p>
+            <p class="card__text">Editable profiles, posts, likes and threaded comments, built around a real follow system: the feed prioritises people you follow and falls back to a public feed for new accounts. Follows, likes and comments update without a reload.</p>
+            <ul class="stack"><li>JavaScript</li><li>Express</li><li>MongoDB</li><li>JWT</li></ul>
+            <p class="card__links">
+              <a href="https://github.com/sidra-ghulam-hussain/CodeAlpha_PulseCircle" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source code</a>
+              <a href="https://screenrec.com/share/8PBWIXHLoz" target="_blank" rel="noopener"><i class="fa-solid fa-circle-play" aria-hidden="true"></i> Watch demo</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card" data-tags="frontend">
+          <a class="card__media" href="https://github.com/sidra-ghulam-hussain/AuroraWave-Music-App" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <img src="assets/covers/aurorawave.svg" alt="" width="880" height="560" loading="lazy">
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">AuroraWave</h3>
+            <p class="card__kicker">Browser music player</p>
+            <p class="card__text">A music player with a song library, album artwork and custom playback controls — play, pause and seek — wired entirely through vanilla JavaScript DOM manipulation and the audio API.</p>
+            <ul class="stack"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+            <p class="card__links">
+              <a href="https://github.com/sidra-ghulam-hussain/AuroraWave-Music-App" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card" data-tags="frontend">
+          <a class="card__media" href="https://github.com/sidra-ghulam-hussain/sidra-todo-app" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <img src="assets/covers/todo-app.svg" alt="" width="880" height="560" loading="lazy">
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">Task Manager</h3>
+            <p class="card__kicker">Everyday task app</p>
+            <p class="card__text">Add, complete and delete tasks with dynamic DOM updates and client-side state handling. Small on purpose: it was where I got the state-update pattern right before reusing it in bigger apps.</p>
+            <ul class="stack"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+            <p class="card__links">
+              <a href="https://github.com/sidra-ghulam-hussain/sidra-todo-app" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Source code</a>
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="grid__empty" id="gridEmpty" hidden>Nothing in that category yet. Pick another filter.</p>
+
+    </div>
+  </section>
+
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--tint" id="contact">
+    <div class="shell contact">
+
+      <div class="section__head">
+        <h2 class="section__title">Contact</h2>
+        <p class="section__note">Tell me what you are building and I will tell you how I would build it</p>
+      </div>
+
+      <div class="contact__grid">
+
+        <form class="form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Ayesha Khan">
+            <p class="field__error" id="nameError" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@company.com">
+            <p class="field__error" id="emailError" role="alert"></p>
+          </div>
+
+          <div class="field">
+            <label for="message">What do you need built?</label>
+            <textarea id="message" name="message" rows="5" placeholder="A short description of the project, the timeline, and anything that already exists."></textarea>
+            <p class="field__error" id="messageError" role="alert"></p>
+          </div>
+
+          <button class="btn btn--solid btn--wide" type="submit">Send message</button>
+          <p class="form__status" id="formStatus" role="status"></p>
+        </form>
+
+        <aside class="contact__side">
+          <h3>Reach me directly</h3>
+          <ul class="contact__list">
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:233670@students.au.edu.pk">233670@students.au.edu.pk</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+923293752114">+92 329 3752114</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <a href="https://github.com/sidra-ghulam-hussain" target="_blank" rel="noopener">github.com/sidra-ghulam-hussain</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              <a href="https://www.linkedin.com/in/sidra-ghulam-hussain59061a372" target="_blank" rel="noopener">LinkedIn profile</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Multan, Punjab, Pakistan — available remotely</span>
+            </li>
+          </ul>
+          <p class="contact__note">Usual reply time is under 24 hours.</p>
+        </aside>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="shell footer__inner">
+    <p class="footer__copy">&copy; <span id="year">2026</span> Sidra Ghulam Hussain. Designed and coded from an empty file.</p>
+    <ul class="socials">
+      <li><a href="https://github.com/sidra-ghulam-hussain" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/sidra-ghulam-hussain59061a372" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+      <li><a href="mailto:233670@students.au.edu.pk" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+      <li><a href="tel:+923293752114" aria-label="Phone"><i class="fa-solid fa-phone" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top" hidden>
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
